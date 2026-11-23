@@ -3,15 +3,16 @@ var RM = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
 /* marquee */
 (function(){
-  var items=['Brand strategy','Social media','Content management','Paid ads','Copywriting',
-             'Creative direction','Community growth','Influencer marketing'];
+  var items=['Brand strategy','Marketing strategy','Growth marketing','Brand positioning',
+             'Paid ads \u2014 Meta & Google','Customer acquisition','Business development',
+             'Go-to-market planning','Content strategy','Creative direction','Social media'];
   var html=items.map(function(t){return '<span>'+t+'</span>';}).join('');
   document.getElementById('mq').innerHTML=html+html;
 })();
 
 /* role rotator */
 (function(){
-  var roles=['brand strategist','content manager','social media strategist','brand consultant'];
+  var roles=['brand strategist','growth marketer','marketing strategist','digital marketing specialist','brand consultant'];
   var el=document.getElementById('rot'), i=0, j=roles[0].length, dir=-1;
   if(RM) return;
   setTimeout(function tick(){
